@@ -1,10 +1,6 @@
 import React from "react";
-import Style from "../assets/SCSS/main.scss";
 import Header from "../Layouts/Header/Header";
-import { Route } from "react-router-dom";
 import Banniere from "../Component/Banniere/Banniere";
-import _pinkBtn from "../Component/PinkBtn/_pinkBtn";
-import listeLogement from "../assets/Back.json";
 import Dropdown from "../Component/Dropdown/Dropdown";
 
 export default function Apropos(Texte,principes) {

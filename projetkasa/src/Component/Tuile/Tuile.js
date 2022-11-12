@@ -1,5 +1,3 @@
-import React, { useEffect, useState } from "react";
-
 export default function Tuile({id,image,titre,description}) {
   return (
     <div className="Tuile-container" id={id}>

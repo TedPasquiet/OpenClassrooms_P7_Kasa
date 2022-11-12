@@ -1,4 +1,4 @@
-import {React,useState,setState} from 'react'
+import {React,useState} from 'react'
 import DropdownText from './DropdownText'
 
 export default function Dropdown({Texte,principes}) {
@@ -11,7 +11,7 @@ export default function Dropdown({Texte,principes}) {
     <>
     <div className='Dropdown-container'>
         <p className='Dropdown-p'>{Texte}</p>
-        <img src={require("../../assets/Images/arrow_back_ios-24px 2.png")} 
+        <img alt='Flèche' src={require("../../assets/Images/arrow_back_ios-24px 2.png")} 
         onClick={handleOpen} className={toggleClassCheck}/>
     </div>
     {open ?(

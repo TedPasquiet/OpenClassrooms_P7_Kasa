@@ -1,9 +1,8 @@
 import React from "react";
-import Style from "../assets/SCSS/main.scss";
 import Header from "../Layouts/Header/Header";
 import Footer from "../Layouts/Footer/Footer";
 import Banniere from "../Component/Banniere/Banniere";
-import { Route } from "react-router-dom";
+import { Link } from "react-router-dom";
 import Tuile from "../Component/Tuile/Tuile";
 import ListeLogement from "../assets/Back.json";
 
@@ -14,6 +13,7 @@ export default function Accueil() {
       <Banniere />
       <section className="Tuile-div-container">
         {ListeLogement.map((logement) => (
+          <Link key={logement.id} to={`/logement${logement.id}`}>
           <Tuile
             key={logement.id}
             id={logement.id}
@@ -21,6 +21,7 @@ export default function Accueil() {
             titre={logement.title}
             description={logement.description}
           />
+          </Link>
         ))}
       </section>
       <Footer />
