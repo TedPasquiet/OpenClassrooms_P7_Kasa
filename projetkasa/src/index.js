@@ -9,5 +9,4 @@ root.render(
     <App />
     <Reset/>
     </BrowserRouter>,
-    document.getElementById("root")
 );

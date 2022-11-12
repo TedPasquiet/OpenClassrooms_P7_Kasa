@@ -1,6 +1,5 @@
 import React from "react";
-import Style from "./Header.css";
-import Logo from "../../assets/.LOGO.png"
+import Logo from "../../assets/Images/.LOGO.png"
 import {Link} from 'react-router-dom'
 
 export default function Home() {

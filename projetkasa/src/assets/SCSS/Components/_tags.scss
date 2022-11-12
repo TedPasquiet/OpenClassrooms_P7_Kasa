@@ -1,0 +1,22 @@
+.pinkBtn{
+    background-color: var(--colorPrimary);
+    height: 18px;
+    width: 84px;
+    border-radius: 5px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    p{
+        color: #ffffff;
+        font-size: 10px;
+    }
+} 
+@media screen and (min-width: 1080px) {
+    .pinkBtn{
+        height: 25px;
+        width: 115px;
+        p{
+            font-size: 14px;
+        }
+    }
+}

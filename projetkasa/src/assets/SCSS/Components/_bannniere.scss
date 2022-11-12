@@ -3,6 +3,8 @@
     height: 225px;
     margin-bottom: 35px;
     position: relative;
+    margin-left: 100px;
+    margin-right: 100px;
 }
 .AcceuilImageDiv>h2{
     color: #ffffff;
@@ -43,8 +45,5 @@
         left: 15px;
         transform: translateY(-40%) translateX(0%);
         width: 175px;
-    }
-    .AcceuilImageDiv>img{
-
     }
 }
