@@ -13,7 +13,7 @@ export default function Accueil() {
       <Banniere />
       <section className="Tuile-div-container">
         {ListeLogement.map((logement) => (
-          <Link key={logement.id} to={`/logement${logement.id}`}>
+          <Link key={logement.id} to={`/logement/${logement.id}`}>
           <Tuile
             key={logement.id}
             id={logement.id}

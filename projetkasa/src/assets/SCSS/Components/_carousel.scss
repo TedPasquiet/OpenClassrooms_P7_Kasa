@@ -1,0 +1,33 @@
+.carouselContainer{
+    height: 225px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom:15px;
+    overflow: hidden;
+    border-radius: 10px;
+    img{
+        object-fit: cover;
+    }
+}
+.arrowLeft{
+    color: black;
+}
+@media screen and (min-width: 1080px){
+    .carouselContainer{
+        margin-left: 100px;
+        margin-right: 100px;
+        height: 415px;
+        border-radius: 25px;
+        background-color: black;
+    }
+}
+
+#carouselExampleControls{
+    height: 225px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-bottom:15px;
+    overflow: hidden;
+    border-radius: 10px;
+    background-color: black;
+}

@@ -10,7 +10,7 @@ export default function RoutesApp() {
   return (
     <Routes>
         <Route path="/" element={<Accueil />}/>
-        <Route path='/logement:id' element={<Fiche />}/>
+        <Route path='/logement/:id' element={<Fiche />}/>
         <Route path="/apropos" element={<APropos />}/>
         <Route path="*" element={<Erreur404 />}/>
     </Routes>
