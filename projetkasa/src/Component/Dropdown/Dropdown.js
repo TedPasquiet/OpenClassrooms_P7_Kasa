@@ -1,5 +1,5 @@
 import {React,useState} from 'react'
-import DropdownText from './DropdownText'
+
 
 export default function Dropdown({Texte,principes}) {
   const [open, setOpen] = useState(false)
@@ -13,10 +13,13 @@ export default function Dropdown({Texte,principes}) {
         <p className='Dropdown-p'>{Texte}</p>
         <img alt='Flèche' src={require("../../assets/Images/arrow_back_ios-24px 2.png")} 
         onClick={handleOpen} className={toggleClassCheck}/>
-    </div>
+      </div>
     {open ?(
-           <DropdownText principes={principes}/>
+               <div className='dropdownDiv'>
+               <p className={'dropdownDiv-Text'}>{principes}</p>
+              </div>
         ) : null}
     </>
   )
 }
+

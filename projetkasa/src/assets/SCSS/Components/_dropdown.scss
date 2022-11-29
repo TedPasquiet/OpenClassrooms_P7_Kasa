@@ -1,33 +1,34 @@
+.ButtonContainer{
+margin-left: 20px;
+margin-right: 20px;
+}
 .Dropdown-div{
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-left: 20px;
-    margin-right: 20px;
     position: relative;
+    overflow: hidden;
 }
 .Dropdown-container{
     position: relative;
+    width: 100%;
     background-color: #FF6060;
     height: 29.93px;
-    width: 335px;
     border-radius: 10px;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-left: 20px;
-    margin-right: 20px;
     margin-bottom: 20px;
     z-index: 2;
     .Dropdown-p{
-font-style: normal;
-font-weight: 500;
-font-size: 13px;
-line-height: 142.6%;
-color: white;
-margin-left: 20px;
-margin-top: 13px;
-margin-left: 13px;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 13px;
+    line-height: 142.6%;
+    color: white;
+    margin-left: 20px;
+    margin-top: 13px;
+    margin-left: 13px;
     }
     img{
         position: relative;
@@ -46,10 +47,8 @@ margin-left: 13px;
 .dropdownDiv{
     position: relative;
     background-color: #f6f6f6;
-    width: 315px;
+    width: 100%;
     margin-top: -30px;
-    margin-left: 20px;
-    margin-right: 20px;
     margin-bottom: 20px;
     border-bottom-left-radius: 5px;
     border-bottom-right-radius: 5px;
@@ -66,32 +65,61 @@ margin-left: 13px;
         Line-height: 143%;
         text-align: Left;
         Vertical-align: Top;
+        margin-left: 11.51px;
+        margin-right: 6.91px;
         }
 }
 .pageContainer{
     display: flex;
     flex-direction: column;
-}
-@media screen and (min-width: 1080px) {
-.pageContainer{
-    margin-left: 208px;
-    margin-right: 209px;
-}
-.Dropdown-container{
-    width: 100%;
-}
-.dropdownDiv{
-    width: 100%;
-    margin-left: 20px;
+    overflow: hidden;
     margin-right: 20px;
-    padding-left: 0;
-    padding-right: 0;
+    margin-left: 20px;
 }
-.dropdownDiv-Text{
-    font-size: 24px;
-    line-height: 142.6%;
-    font-weight: 400;
-    margin-left: 18px;
-}
+
+
+
+@media screen and (min-width: 1080px) {
+    .ButtonContainer{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .pageContainer{
+        margin-left: 208px;
+        margin-right: 209px;
+    }
+    .Dropdown-container{
+        width: 100%;
+        height: 52px;
+        .Dropdown-p{
+            font-size: 18px;
+        }
+    }
+    .dropdown-Div{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        margin-left: 20px;
+        margin-right: 20px;
+        padding-left: 0;
+        padding-right: 0;
+        .dropdownDiv-Text{
+            font-size: 24px;
+            line-height: 142.6%;
+            font-weight: 400;
+            margin-left: 18px;
+            padding-left: 10px;
+        }
+    }
+    .Dropdown-div{
+        flex-direction: column;
+        width: 45%;
+    }
+    .dropdownDiv{
+    padding-right: 0px;
+    padding-left: 0px;
+    }
+    
 }
 

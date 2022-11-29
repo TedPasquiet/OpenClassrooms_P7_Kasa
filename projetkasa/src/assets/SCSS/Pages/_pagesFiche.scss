@@ -17,3 +17,52 @@
         margin-top: 0px;
     }
 }
+.intelContainerOwner{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row-reverse;
+    align-items: center;
+    margin-bottom: 16px;
+    .IntelContainerLandlord{
+        display: flex;
+        align-items: center;
+        margin-right: 20.5px;
+    }
+    .Name{
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 142.6%;
+        margin-right: 10.5px;
+        color: #FF6060;
+    }
+    .Picture{
+        height: 32px;
+        width: 32px;
+        border-radius: 90px;
+    }
+    .IntelContainerRating{
+        display: flex;
+        img{
+            height: 15px;
+        }
+    }
+}
+@media screen and (min-width: 1080px){
+    .intelContainer{
+        display: flex;
+        justify-content: space-between;
+    }
+    .intelContainerLogement{
+        h2{
+            font-size: 36px;
+        }
+        h3{
+            font-size: 18px;
+        }
+    }
+    .intelContainerOwner{
+        display: flex;
+        flex-direction: column;
+        justify-content: baseline;
+    }
+}

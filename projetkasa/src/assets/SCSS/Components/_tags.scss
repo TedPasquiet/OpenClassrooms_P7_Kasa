@@ -1,12 +1,11 @@
 .pinkBtnContainer{
     display: flex;
-    margin-left: 20px;
     margin-bottom: 17.84px;
 }
 .pinkBtn{
     background-color: var(--colorPrimary);
     height: 18px;
-    width: 84px;
+    width: auto;
     border-radius: 5px;
     display: flex;
     justify-content: center;
@@ -15,12 +14,13 @@
     p{
         color: #ffffff;
         font-size: 10px;
+        margin-left: 5px;
+        margin-right: 5px;
     }
 } 
 @media screen and (min-width: 1080px) {
     .pinkBtn{
         height: 25px;
-        width: 115px;
         p{
             font-size: 14px;
         }

@@ -2,6 +2,7 @@ import React from "react";
 import Header from "../Layouts/Header/Header";
 import Banniere from "../Component/Banniere/Banniere";
 import Dropdown from "../Component/Dropdown/Dropdown";
+import Footer from "../Layouts/Footer/Footer"
 
 export default function Apropos(Texte,principes) {
   return (
@@ -14,6 +15,7 @@ export default function Apropos(Texte,principes) {
       <Dropdown Texte={"Service"} principes={"Nos équipes se tiennent à votre disposition pour vous fournir une expérience parfaite. N'hésitez pas à nous contacter si vous avez la moindre question."}/>
       <Dropdown Texte={"Responsabilité"} principes={"La sécurité est la priorité de Kasa. Aussi bien pour nos hôtes que pour les voyageurs, chaque logement correspond aux critères de sécurité établis par nos services. En laissant une note aussi bien à l'hôte qu'au locataire, cela permet à nos équipes de vérifier que les standards sont bien respectés. Nous organisons également des ateliers sur la sécurité domestique pour nos hôtes."}/>
       </div>
+      <Footer/>
     </>
   );
 }
