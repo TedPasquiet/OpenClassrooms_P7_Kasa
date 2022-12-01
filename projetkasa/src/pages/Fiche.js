@@ -17,16 +17,11 @@ export default function Fiche() {
     (Element, index) => {
       return (
         <>
-          {Element}
-          <br />
+          <p className={'dropdownDiv-Text'} key={index}>{Element}</p>
         </>
       );
     }
   );
-    // Définition de l'élément Tags avec caractéristiques logement
-  const logementFiltreTags = logementFiltre.tags.map((Element, index) => {
-    return Element;
-  });
   // Définition du nom + hachage nom prénom
   const logementFiltreName = logementFiltre.host.name;
   const slice = logementFiltreName.split(/(\s+)/);
@@ -34,16 +29,16 @@ export default function Fiche() {
   const last = slice[2];
   return (
     <>
-      <Header />
       <main>
+        <Header/>
       <Carousel slides={logementFiltre.pictures} />
       <div className="intelContainer">
         <div className="intelContainerLogement">
           <h2>{logementFiltre.title}</h2>
           <h3>{logementFiltre.location}</h3>
           <span className="pinkBtnContainer">
-          {logementFiltreTags.map((Element) => (
-            <PinkBtn Caracteristiques={Element} />
+          { logementFiltre.tags.map((Element,index) => (
+            <PinkBtn Caracteristiques={Element} key={index}/>
           ))}
           </span>
         </div>
@@ -75,4 +70,4 @@ export default function Fiche() {
       <Footer/>
     </>
   )
-  };
+}
