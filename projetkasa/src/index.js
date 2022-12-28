@@ -7,5 +7,5 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <BrowserRouter>
     <RoutesApp/>
-  </BrowserRouter>,
+  </BrowserRouter>
 );

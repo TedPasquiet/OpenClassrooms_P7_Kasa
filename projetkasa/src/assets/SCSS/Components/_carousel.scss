@@ -24,14 +24,14 @@
     transform: rotate(90deg);
 }
 .carousel-control-prev{
-    position: absolute;
-    top: 190px;
-    left: 35px;
+    position: relative;
+    top: -49%;
+    left: 5%;
 }
 .carousel-control-next{
-    position: absolute;
-    left: 320px;
-    bottom: 460px;
+    position: relative;
+    left: 90%;
+    top: -58%;
 }
 .rightArrow{
     color: red;
@@ -68,13 +68,6 @@
     }
     #carouselExampleControls{
         height: 415px;
-    }
-    .carousel-control-prev{
-        top: 375px
-    }
-    .carousel-control-next{
-        left: 1090px;
-        bottom: 890px;
     }
 }
 
