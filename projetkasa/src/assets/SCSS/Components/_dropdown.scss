@@ -80,6 +80,7 @@ margin-right: 20px;
     align-content: space-around;
     overflow: hidden;
     height: 100%;
+    min-height: 36vh;
     margin-right: 20px;
     margin-left: 20px;
 }
@@ -95,6 +96,7 @@ margin-right: 20px;
     .pageContainer{
         margin-left: 208px;
         margin-right: 209px;
+        min-height: 48vh;
     }
     .Dropdown-container{
         width: 100%;
